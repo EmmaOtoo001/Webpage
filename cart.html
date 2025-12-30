@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<h1 class="scrolling-header">Bean Boutique</h1>
+<h1>Your Cart</h1>
+</marquee>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="coffee.html">Coffee Selection</a>
+  <a href="equipment.html">Brewing Equipment</a>
+  <a href="events.html">Events</a>
+  <a href="offers.html">Offers</a>
+  <a href="cart.html" id="active">Cart</a>
+</nav>
+
+<section class="cart-container">
+  <div class="cart-header">
+    <span>Product</span>
+    <span>Price</span>
+    <span>Action</span>
+  </div>
+  <div id="cart-items"></div>
+  <div class="cart-footer">
+    <strong>Total: ₵<span id="total">0.00</span>&nbsp;&nbsp;&nbsp;&nbsp;<button id="pay">Pay</button></strong>
+  </div>
+</section>
+
+<div id="notification"></div>
+
+<script src="script.js"></script>
+<footer>© Bean Boutique</footer>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brewing Equipment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<h1 class="scrolling-header">Bean Boutique</h1>
+<h1>Brewing Equipment</h1>
+ </marquee>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="coffee.html">Coffee Selection</a>
+  <a href="equipment.html"id="active">Brewing Equipment</a>
+  <a href="events.html">Events</a>
+  <a href="offers.html">Offers</a>
+  <a href="cart.html">Cart</a>
+</nav>
+
+<div id="notification"></div>
+
+<div id="products">
+    <div class="product-row top">
+  <div class="product">
+    <img src="images/manualcoffeegrinder.webp" alt="Manual Coffee Grinder">
+    <p class="price">
+      <label>Manual Coffee Grinder</label><br>
+      <small>Precision grinding for fresh, aromatic coffee</small><br><br>
+      <label>₵1,379 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Manual Coffee Grinder', 1379)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/download_10.webp" alt="French Press Brewer">
+    <p class="price">
+      <label>French Press Brewer</label><br>
+      <small>Rich, full-bodied coffee with simple brewing</small><br><br>
+      <label>₵1,724 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('French Press Brewer', 1724)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/OIP.webp" alt="Pour-Over Coffee Dripper">
+    <p class="price">
+      <label>Pour-Over Coffee Dripper</label><br>
+      <small>Clean and flavorful manual brewing method</small><br><br>
+      <label>₵2,069 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Pour-Over Coffee Dripper', 2069)">Add to Cart</button>
+    </p>
+  </div>
+</div>
+
+<div class="product-row bottom">
+  <div class="product">
+    <img src="images/Leaf-Bean-Electric-Goose-Neck-Kettle-800ml-Black_4_2000px.webp" alt="Electric Gooseneck Kettle">
+    <p class="price">
+      <label>Electric Gooseneck Kettle</label><br>
+      <small>Accurate pouring for perfect extraction</small><br><br>
+      <label>₵1,954 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Electric Gooseneck Kettle', 1954)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/OIP_2.webp" alt="Coffee Tamper">
+    <p class="price">
+      <label>Coffee Tamper</label><br>
+      <small>Ensures even pressure for perfect espresso shots</small><br><br>
+      <label>₵592 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Coffee Tamper', 592)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/61vvZy1S77L._AC_SL1500_.jpg" alt="Milk Frother">
+    <p class="price">
+      <label>Electric Milk Frother</label><br>
+      <small>Creates creamy foam for lattes and cappuccinos</small><br><br>
+      <label>₵977 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Electric Milk Frother', 977)">Add to Cart</button>
+    </p>
+  </div>
+</div>
+
+<div class="product-row bottom">
+  <div class="product">
+    <img src="images/download_11.webp" alt="Coffee Canister">
+    <p class="price">
+      <label>Airtight Coffee Canister</label><br>
+      <small>Keeps coffee beans fresh and aromatic</small><br><br>
+      <label>₵1,493 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Airtight Coffee Canister', 1493)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/OIP_3.webp" alt="Moka Pot">
+    <p class="price">
+      <label>Moka Pot</label><br>
+      <small>Classic stovetop espresso-style brewing</small><br><br>
+      <label>₵1,839 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Moka Pot', 1839)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/download_13.webp" alt="Coffee Siphon">
+    <p class="price">
+      <label>Coffee Siphon Brewer</label><br>
+      <small>Theatrical brewing with clean, rich flavor</small><br><br>
+      <label>₵3,677 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Coffee Siphon Brewer', 3677)">Add to Cart</button>
+    </p>
+  </div>
+</div>
+
+<div class="product-row bottom">
+  <div class="product">
+    <img src="images/OIP_4.webp" alt="Pour Over Set">
+    <p class="price">
+      <label>Pour-Over Starter Set</label><br>
+      <small>Everything needed for manual brewing</small><br><br>
+      <label>₵2,416 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Pour-Over Starter Set', 2416)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/analogue.jpg" alt="Coffee Thermometer">
+    <p class="price">
+      <label>Coffee Thermometer</label><br>
+      <small>Helps maintain ideal brewing temperature</small><br><br>
+      <label>₵362 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Coffee Thermometer', 362)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/OIP_5.webp" alt="Knock Box">
+    <p class="price">
+      <label>Espresso Knock Box</label><br>
+      <small>Easy disposal of used coffee grounds</small><br><br>
+      <label>₵1,609 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Espresso Knock Box', 1609)">Add to Cart</button>
+    </p>
+  </div>
+</div>
+
+<div class="product-row bottom">
+  <div class="product">
+    <img src="images/OIP_6.webp" alt="Drip Scale">
+    <p class="price">
+      <label>Digital Drip Scale</label><br>
+      <small>Precision timing and weight control</small><br><br>
+      <label>₵995 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Digital Drip Scale', 995)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/OIP_7.webp" alt="Coffee Cupping Set">
+    <p class="price">
+      <label>Coffee Cupping Set</label><br>
+      <small>Professional tasting tools for flavor evaluation</small><br><br>
+      <label>₵3,173 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Coffee Cupping Set', 3173)">Add to Cart</button>
+    </p>
+  </div>
+
+  <div class="product">
+    <img src="images/OIP_9.webp" alt="Travel Coffee Mug">
+    <p class="price">
+      <label>Insulated Travel Coffee Mug</label><br>
+      <small>Keeps coffee hot or cold on the go</small><br><br>
+      <label>₵749 &nbsp;</label>
+      <button class="buy-btn" onclick="addToCart('Insulated Travel Coffee Mug', 749)">Add to Cart</button>
+    </p>
+  </div>
+</div>
+</div>
+<footer>© Bean Boutique</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events & Workshops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+<h1 class="scrolling-header">Bean Boutique</h1>
+<h1>Events And Workshops</h1>
+</header>
+
+
+ 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="coffee.html">Coffee Selection</a>
+  <a href="equipment.html">Brewing Equipment</a>
+  <a href="events.html" id="active">Events</a>
+  <a href="offers.html">Offers</a>
+  <a href="cart.html">Cart</a>
+</nav>
+
+<form class="form">
+  <h3>Book Bean Boutique for Your Event</h3>
+  <p class="form-subtitle">Fill in the details below and we'll get back to you to confirm your booking</p>
+
+  <div class="form-group">
+    <input type="text" placeholder="First Name" required>
+    <input type="text" placeholder="Last Name" required>
+  </div>
+
+  <input type="email" placeholder="Email Address" required>
+  <input type="tel" placeholder="Phone Number" required>
+
+  <input type="text" placeholder="Company / Organization (Optional)">
+
+  <select required>
+    <option value="">Type of Event</option>
+    <option>Birthday Party</option>
+    <option>Corporate Meeting</option>
+    <option>Workshop / Training</option>
+    <option>Private Coffee Tasting</option>
+    <option>Other</option>
+  </select>
+
+<label for="event-date">Event Date</label>
+<input type="date" id="event-date" required>
+  
+<label for="event-time">Event Start Time</label>
+<input type="time" id="event-time" required>
+
+<input type="number" placeholder="Number of Guests" required min="1">
+
+ <textarea placeholder="Additional Requests or Notes" rows="4"></textarea>
+
+  
+  <label class="checkbox">
+    <input type="checkbox" required>
+    I agree to receive booking confirmation and updates
+  </label>
+
+  <button type="submit">Submit Booking Request</button>
+</form>
+
+
+<footer>© Bean Boutique</footer>
+</body>
+</html>

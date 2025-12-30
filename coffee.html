@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Selection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+<h1 class="scrolling-header">Bean Boutique</h1>
+<h1>Our Coffee Selection</h1>
+</marquee>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="coffee.html" id="active">Coffee Selection</a>
+  <a href="equipment.html">Brewing Equipment</a>
+  <a href="events.html">Events</a>
+  <a href="offers.html">Offers</a>
+  <a href="cart.html">Cart</a>
+</nav>
+
+<div id="coffeeList">
+<input type="text" id="search" placeholder="Search coffee..." onkeyup="filterItems()">
+<div id="notification"></div>
+<section class="grid">
+
+  <div class="card item">
+    <h3>Floral Blend</h3>
+    <p>Light, floral notes with citrus hints</p>
+    <span class="price">₵35.00</span>
+    <button onclick="addToCart('Floral Blend', 35)">Add to Cart</button>
+  </div>
+
+  <div class="card item">
+  <h3>French Roast</h3>
+  <p>Dark, smoky, and intense</p>
+  <span class="price">₵34.00</span>
+  <button onclick="addToCart('French Roast', 34)">Add to Cart</button>
+</div>
+
+  <div class="card item">
+    <h3>Dark Espresso</h3>
+    <p>Bold, rich, and full-bodied</p>
+    <span class="price">₵40.00</span>
+    <button onclick="addToCart('Dark Espresso', 40)">Add to Cart</button>
+  </div>
+
+  <div class="card item">
+    <h3>Bright Roast</h3>
+    <p>Vibrant acidity with a crisp finish</p>
+    <span class="price">₵38.00</span>
+    <button onclick="addToCart('Bright Roast', 38)">Add to Cart</button>
+  </div>
+
+  <div class="card item">
+  <h3>Cappuccino</h3>
+  <p>Rich espresso with creamy foam</p>
+  <span class="price">₵40.00</span>
+  <button onclick="addToCart('Cappuccino', 40)">Add to Cart</button>
+</div>
+
+  <div class="card item">
+    <h3>Cold Brew</h3>
+    <p>Smooth, refreshing, and naturally sweet</p>
+    <span class="price">₵32.00</span>
+    <button onclick="addToCart('Cold Brew', 32)">Add to Cart</button>
+  </div>
+
+  <div class="card item">
+    <h3>Nutty Roast</h3>
+    <p>Smooth body with nutty undertones</p>
+    <span class="price">₵30.00</span>
+    <button onclick="addToCart('Nutty Roast', 30)">Add to Cart</button>
+  </div>
+
+<div class="card item">
+  <h3>Medium Roast</h3>
+  <p>Balanced taste with a smooth aroma</p>
+  <span class="price">₵28.00</span>
+  <button onclick="addToCart('Medium Roast', 28)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Classic Black</h3>
+  <p>Pure, bold flavor with a clean finish</p>
+  <span class="price">₵25.00</span>
+  <button onclick="addToCart('Classic Black', 25)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Caramel Coffee</h3>
+  <p>Sweet caramel notes with a creamy finish</p>
+  <span class="price">₵36.00</span>
+  <button onclick="addToCart('Caramel Coffee', 36)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Vanilla Brew</h3>
+  <p>Light vanilla aroma and smooth body</p>
+  <span class="price">₵33.00</span>
+  <button onclick="addToCart('Vanilla Brew', 33)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Hazelnut Coffee</h3>
+  <p>Nutty sweetness with rich flavor</p>
+  <span class="price">₵35.00</span>
+  <button onclick="addToCart('Hazelnut Coffee', 35)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Mocha Blend</h3>
+  <p>Chocolate-infused and indulgent</p>
+  <span class="price">₵38.00</span>
+  <button onclick="addToCart('Mocha Blend', 38)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Espresso Shot</h3>
+  <p>Strong, concentrated, and intense</p>
+  <span class="price">₵26.00</span>
+  <button onclick="addToCart('Espresso Shot', 26)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Double Espresso</h3>
+  <p>Extra bold with a rich crema</p>
+  <span class="price">₵34.00</span>
+  <button onclick="addToCart('Double Espresso', 34)">Add to Cart</button>
+</div>
+
+<div class="card item">
+    <h3>Chocolate Blend</h3>
+    <p>Rich chocolate notes with low acidity</p>
+    <span class="price">₵28.00</span>
+    <button onclick="addToCart('Chocolate Blend', 28)">Add to Cart</button>
+  </div>
+
+<div class="card item">
+  <h3>Latte</h3>
+  <p>Smooth espresso with steamed milk</p>
+  <span class="price">₵39.00</span>
+  <button onclick="addToCart('Latte', 39)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Flat White</h3>
+  <p>Velvety milk with smooth espresso</p>
+  <span class="price">₵38.00</span>
+  <button onclick="addToCart('Flat White', 38)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Affogato</h3>
+  <p>Espresso poured over vanilla ice cream</p>
+  <span class="price">₵45.00</span>
+  <button onclick="addToCart('Affogato', 45)">Add to Cart</button>
+</div>
+
+<div class="card item">
+  <h3>Cinnamon Brew</h3>
+  <p>Warm spice notes with a smooth finish</p>
+  <span class="price">₵33.00</span>
+  <button onclick="addToCart('Cinnamon Brew', 33)">Add to Cart</button>
+</div>
+
+
+</section>
+
+<footer id="cfoot">© Bean Boutique</footer>
+
+</body>
+</html>
